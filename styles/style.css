@@ -1,0 +1,207 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+:root {
+  --primary-color: white;
+  --secondary-color: green;
+}
+
+header {
+  background-color: #333333;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header img {
+  width: 40px;
+  height: 40px;
+}
+
+header nav ul {
+  display: flex;
+  gap: 10px;
+  list-style: none;
+}
+
+header nav ul li a {
+  text-decoration: none;
+  color: white;
+}
+
+header nav ul li a:hover {
+  color: var(--secondary-color);
+}
+
+
+
+
+
+#banner {
+  background-image: url("../assets/Fondo.png");
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  background-size: cover;
+  color: white;
+}
+
+#banner h1 {
+  font-size: 40px;
+  position: absolute;
+  /* Establecer el posicionamiento absoluto para el h1 */
+  bottom: 35vh;
+  /* Alinear el h1 en la parte inferior del contenedor */
+  left: 120vh;
+  /* Alinear el h1 a la izquierda del contenedor */
+}
+
+#banner h2 {
+  font-size: 25px;
+  color: white;
+  position: absolute;
+  bottom: 30vh;
+  left: 110vh;
+}
+
+#banner h3 {
+  font-size: 15px;
+  color: white;
+  position: absolute;
+  bottom: -5vh;
+  left: 85vh;
+  margin: 20vh;
+}
+
+#banner img {
+  max-width: 100%;
+  height: auto;
+}
+
+section {
+  padding: 30px;
+  min-height: 80vh;
+}
+
+#projects,
+#education,
+#contact {
+  text-align: center;
+}
+
+
+#projects h2,
+#education h2,
+#contact h2 {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  display: inline;
+  font-size: 30px;
+  background-color: BLACK;
+  color: var(--primary-color);
+  border-radius: 10px;
+}
+
+#projects img,
+#education img,
+#contact img {
+  width: 200px;
+  height: 170px;
+}
+
+
+#projects .container-grid-projects,
+#education .container-grid-education {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+  padding: 20px;
+}
+
+#projects .card,
+#education .card {
+  padding: 20px;
+  border: 1px solid rgb(230, 230, 230);
+  box-shadow: 6px 5px 45px -15px rgba(155, 150, 150, 0.75);
+  border-radius: 10px;
+  transition: 0.3s transform;
+}
+
+#projects .card:hover,
+#education .card:hover {
+  transform: scale(1.03);
+}
+
+#projects .card a,
+#education .card a,
+#contact button {
+  text-decoration: none;
+  border-radius: 10px;
+  padding: 5px 10px;
+  display: block;
+  width: 20%;
+  margin: 10px auto;
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
+}
+
+
+
+
+#education .card {
+  background-color: white;
+}
+
+
+
+form {
+  width: 50%;
+  padding: 30px;
+  margin: auto;
+}
+
+form * {
+  display: block;
+  width: 100%;
+  margin: 5px 0;
+  border: none;
+  outline: none;
+}
+
+form input,
+textarea {
+  border: 1px solid gray;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+#message {
+  height: 150px;
+}
+
+
+footer {
+  padding: 20px;
+  background-color: black;
+  color: white;
+  text-align: center;
+}
+
+@media (max-width: 880px) {
+
+  #education .container-grid-education,
+  #projects .container-grid-projects {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 480px) {
+
+  #education .container-grid-education,
+  #projects .container-grid-projects {
+    grid-template-columns: 1fr;
+  }
+}
