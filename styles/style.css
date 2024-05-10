@@ -87,15 +87,29 @@ section {
   min-height: 80vh;
 }
 
-#projects,
-#education,
+.btn-wsp {
+  position: fixed;
+  width: 55px;
+  height: 55px;
+  line-height: 55px;
+  bottom: 30px;
+  right: 30px;
+  background-color: green;
+  color: white;
+  border-radius: 50px;
+  text-align: center;
+
+}
+
+#products,
+#oferts,
 #contact {
   text-align: center;
 }
 
 
-#projects h2,
-#education h2,
+#products h2,
+#oferts h2,
 #contact h2 {
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   display: inline;
@@ -105,24 +119,24 @@ section {
   border-radius: 10px;
 }
 
-#projects img,
-#education img,
+#products img,
+#oferts img,
 #contact img {
   width: 200px;
   height: 170px;
 }
 
 
-#projects .container-grid-projects,
-#education .container-grid-education {
+#products .container-grid-products,
+#oferts .container-grid-oferts {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 40px;
   padding: 20px;
 }
 
-#projects .card,
-#education .card {
+#products .card,
+#oferts .card {
   padding: 20px;
   border: 1px solid rgb(230, 230, 230);
   box-shadow: 6px 5px 45px -15px rgba(155, 150, 150, 0.75);
@@ -130,13 +144,13 @@ section {
   transition: 0.3s transform;
 }
 
-#projects .card:hover,
-#education .card:hover {
+#products .card:hover,
+#oferts .card:hover {
   transform: scale(1.03);
 }
 
-#projects .card a,
-#education .card a,
+#products .card a,
+#oferts .card a,
 #contact button {
   text-decoration: none;
   border-radius: 10px;
@@ -185,10 +199,79 @@ textarea {
 
 footer {
   padding: 20px;
-  background-color: black;
+  background-color: green;
   color: white;
   text-align: center;
 }
+
+.pie-pagina {
+  width: 100%;
+  background-color: black;
+}
+
+.pie-pagina .grupo-1 {
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 50px;
+  padding: 45px 0px;
+}
+
+.pie-pagina .grupo-1 .box figure {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-items: center;
+  align-items: center;
+  margin-bottom: -50px;
+
+}
+
+.pie-pagina .grupo-1 .box img {
+  width: 250px;
+}
+
+.pie-pagina .grupo-1 .box h2 {
+  color: white;
+  margin-bottom: 25px;
+  font-size: 20px;
+}
+
+.pie-pagina .grupo-1 .box p {
+  color: #efefef;
+  margin: 10px;
+}
+
+.pie-pagina .grupo-1 .red-social a {
+  display: inline-block;
+  text-decoration: none;
+  width: 45px;
+  height: 45px;
+  line-height: 45px;
+  color: #fff;
+  margin-right: 10px;
+  background-color: #0d2033;
+  text-align: center;
+  transition: all 300ms ease;
+}
+
+.pie-pagina .grupo-1 .red-social a:hover {
+  color: aqua;
+}
+
+.pie-pagina .grupo-2 {
+  background-color: #0a1a2a;
+  padding: 15px 10px;
+  text-align: center;
+  color: #fff;
+}
+
+.pie-pagina .grupo-2 small {
+  font-size: 15px;
+}
+
 
 @media (max-width: 880px) {
 
@@ -204,4 +287,46 @@ footer {
   #projects .container-grid-projects {
     grid-template-columns: 1fr;
   }
+}
+
+@media screen and (max-width: 880px) {
+
+  .pie-pagina .grupo-1 {
+    width: 90%;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 30px;
+    padding: 35px 0px;
+  }
+}
+
+@media (max-width: 480px) {
+
+  .pie-pagina .grupo-1 {
+    grid-template-columns: 1fr;
+  }
+}
+
+.float {
+  position: fixed;
+  width: 60px;
+  height: 60px;
+  bottom: 40px;
+  right: 40px;
+  background-color: #25d366;
+  color: #FFF;
+  border-radius: 50px;
+  text-align: center;
+  font-size: 30px;
+  box-shadow: 2px 2px 3px #999;
+  z-index: 100;
+}
+
+.float:hover {
+  text-decoration: none;
+  color: #25d366;
+  background-color: #fff;
+}
+
+.my-float {
+  margin-top: 16px;
 }
