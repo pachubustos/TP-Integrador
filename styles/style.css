@@ -176,7 +176,8 @@ section {
 
 
 
-#education .card {
+#products .card,
+#oferts .card {
   background-color: white;
 }
 
@@ -196,16 +197,18 @@ form * {
   outline: none;
 }
 
-form input,
-textarea {
+form input {
   border: 1px solid gray;
   padding: 5px;
   border-radius: 5px;
 }
 
-#message {
-  height: 150px;
+form textarea {
+  border: 1px solid gray;
+  padding: 40px 5px;
+  border-radius: 5px;
 }
+
 
 
 footer {
