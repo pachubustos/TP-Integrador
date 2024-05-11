@@ -111,13 +111,11 @@ section {
 #products h2,
 #oferts h2,
 #contact h2 {
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  display: inline;
-  font-size: 30px;
-  background-color: BLACK;
-  color: var(--primary-color);
-  border-radius: 10px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
+
+
+
 
 #products img,
 #oferts img,
@@ -150,14 +148,25 @@ section {
 }
 
 #products .card a,
-#oferts .card a,
-#contact button {
+#oferts .card a {
   text-decoration: none;
   border-radius: 10px;
   padding: 5px 10px;
   display: block;
   width: 20%;
   margin: 10px auto;
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
+}
+
+#contact button {
+  cursor: pointer;
+  text-decoration: none;
+  border-radius: 10px;
+  padding: 5px;
+  display: block;
+  width: auto;
+  margin: auto;
   background-color: var(--secondary-color);
   color: var(--primary-color);
 }
