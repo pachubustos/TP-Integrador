@@ -37,46 +37,46 @@ header nav ul li a:hover {
   color: var(--secondary-color);
 }
 
-
-
+#banner {
+  display: flex;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
 
 #banner h1 {
-  flex-direction: row;
   color: black;
   font-size: 40px;
-  position: absolute;
-  /* Establecer el posicionamiento absoluto para el h1 */
-  top: 30vh;
-  /* Alinear el h1 en la parte inferior del contenedor */
-  left: 18vh;
-  /* Alinear el h1 a la izquierda del contenedor */
 }
 
 #banner h2 {
   font-size: 25px;
   color: black;
-  position: absolute;
-  top: 37vh;
-  left: 10vh;
 }
 
 #banner h3 {
   font-size: 15px;
   color: black;
-  position: absolute;
-  top: 40vh;
-  left: 5vh;
-  margin: 5vh;
-  width: 75vh;
+}
+
+#banner h1,
+#banner h2,
+#banner h3 {
+  text-align: left;
+  max-width: 40%;
+  padding: 0px;
+  margin: 50px 0px 0px 40px;
 }
 
 #banner img {
-  top: 15vh;
+  position: absolute;
   max-width: 100%;
   height: auto;
-  position: absolute;
-  right: 10vh;
+  right: 5vh;
+  bottom: 14vh;
 }
+
+
 
 section {
   padding: 30px;
@@ -130,9 +130,6 @@ section {
   gap: 40px;
   padding: 20px;
 }
-
-
-
 
 #products .card,
 #oferts .card {
@@ -302,8 +299,6 @@ footer {
   }
 }
 
-
-
 @media screen and (max-width: 880px) {
 
   .pie-pagina .grupo-1 {
@@ -321,76 +316,23 @@ footer {
   }
 }
 
-@media screen and (max-width: 480px) {
-
-  .container-grid-presentation {
-    grid-template-columns: 1fr;
-  }
-}
-
-figure {
-  display: flex;
-}
-
-/* Empezamos con el banner  */
-
-.banner {
-  text-align: center;
-  padding-top: 3rem;
-}
-
-.banner__container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 30px 30px 0;
-}
-
-.banner__bg {
-  margin-top: 3rem;
-}
-
-.banner__title {
-  font-size: 32px;
-  font-weight: 700;
-  margin-bottom: 12px;
-}
-
-.banner__description {
-  font-size: 18px;
-  max-width: 700px;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 12px;
-}
-
-.banner__title,
-.banner__description {
-  color: white;
-}
-
-.banner__img {
-  width: 250px;
-}
-
-
-
-
 @media (max-width: 480px) {
-  .banner {
-    text-align: left;
+  #banner {
+    flex-direction: column;
   }
 
-  .banner__container {
-    flex-direction: row;
-    justify-content: space-around;
-    padding: 0 30px;
+  #banner .text-banner {
+    margin-top: 2px;
+    height: 50%;
+    width: 100%;
   }
 
+  #banner .img-banner {
+    margin-top: 0;
+    width: 30%;
+    height: 30%;
+  }
 }
-
-
-
 
 
 
