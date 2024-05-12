@@ -289,7 +289,7 @@ footer {
 
 @media (max-width: 880px) {
 
-  #education .container-grid-education,
+  #oferts .container-grid-oferts,
   #projects .container-grid-projects {
     grid-template-columns: 1fr 1fr;
   }
@@ -297,8 +297,8 @@ footer {
 
 @media (max-width: 480px) {
 
-  #education .container-grid-education,
-  #projects .container-grid-projects {
+  #oferts .container-grid-oferts,
+  #products .container-grid-products {
     grid-template-columns: 1fr;
   }
 }
@@ -319,6 +319,8 @@ footer {
     grid-template-columns: 1fr;
   }
 }
+
+
 
 .float {
   position: fixed;
